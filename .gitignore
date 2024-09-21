@@ -1,0 +1,5 @@
+# Ignorar arquivo de credenciais
+credentials.json
+
+# Ignorar arquivos JSON de debug
+*.debug.json

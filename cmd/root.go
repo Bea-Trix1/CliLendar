@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 
+	agenda "github.com/Bea-Trix1/CliLendar/cmd/agenda"
 	cmd "github.com/Bea-Trix1/CliLendar/cmd/events"
 
 	"github.com/spf13/cobra"
@@ -11,12 +12,11 @@ import (
 
 func NewRootCmd() *cobra.Command {
 	rootCmd := cobra.Command{
-		Use:   "calendar",
+		Use:   "calendario",
 		Short: "Gerencie sua agenda",
-		// Args:  cobra.ExactArgs(2),
 	}
 
-	rootCmd.AddCommand(cmd.EventsCmd)
+	rootCmd.AddCommand(cmd.EventsCmd, agenda.AgendaCmd)
 
 	return &rootCmd
 }
