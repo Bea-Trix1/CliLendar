@@ -2,4 +2,4 @@
 credentials.json
 
 # Ignorar arquivos JSON de debug
-*.debug.json
+.vscode
